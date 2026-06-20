@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+section{
+    height:430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    height: 430px;
+    width: 350px;
+    background-color: darkred;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: 170px;
+}
+.image{
+    height: 350px;
+    width: 350px;
+    background-image: url(./images/shoe.png);
+    background-size: cover;
+    position: absolute;
+    margin-top: -50px;
+}
+.descript{
+    Font-size:15px;
+    color:white;
+    text-align: center;
+    margin-top: 240px;
+}
+h2,p{
+    margin-top: 10px;
+}
+b{
+    font-size: 15px;
+}
+.buy{
+    height: 50px;
+    width: 120px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;  
+    font-size: 20px;
+    background-color: black;
+    border-radius: 10px;
+    margin-left:-130px;
+    margin-top: 350px;
+    position: absolute;
+}
+.buy:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.star{
+    height:40px;
+    width:40px;
+    background-color: white;
+    margin-left: 150px;
+    margin-top:355px;
+    border-radius: 5px;
+    position: absolute;
+}
+i{
+    font-size: 25px;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.main:hover .image{
+    animation: image1 2s ease-in-out forwards;
+}
+@keyframes image1{
+    0%{
+        transform: translateY(0px) rotate(0deg);
+        transition-duration: 2s;
+    }
+    100%{
+        transform: translateY(-100px) rotate(-20deg);
+    }
+}
+.main:hover i{
+    animation: star1 1s ease-in-out forwards;
+}
+@keyframes star1{
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
